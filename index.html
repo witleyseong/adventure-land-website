@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Land</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu">
+    <label class="close-menu-label" for="close-menu" title="Close Menu"></label>
+    
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="document.getElementById('close-menu').checked = false;">
+                <a href="#home">
+                    <img src="/theme-park-img/19-logo.webp" alt="Logo" class="logo-img">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="#rides">Rides</a></li>
+                    <li><a href="areas.html">Areas</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <!-- Start Home Section -->
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <h2>Adventure Land</h2>
+                <p>Open every day from April to October, 9 AM to 7 PM.</p>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- Start Rides Section -->
+    <section id="rides" class="cards-section"><br><br>
+        <h2>Rides & Events</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="/theme-park-img/20-itai-aarons-THcBzXzG2tA-unsplash.jpg" alt="Sky Thrill Coaster">
+                <div class="card-body">
+                    <h5 class="card-title">Sky Thrill Coaster</h5>
+                    <p>The Sky Thrill Coaster takes riders on an exhilarating vertical climb followed by a steep drop, providing an adrenaline-pumping experience with sharp turns and thrilling speeds. With stunning views of the park from the top, this ride is perfect for thrill-seekers who love high-speed excitement and heart-racing moments!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/theme-park-img/11-jacob-capener-o2gg-DwN9pw-unsplash.jpg" alt="Speed">
+                <div class="card-body">
+                    <h5 class="card-title">Speed</h5>
+                    <p>Go 0-70mph in 1.0 seconds and get fired 209 ft high on the fastest launch coaster!</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/theme-park-img/6-ethan-hoover-zyU2gQ9mWLM-unsplash.jpg" alt="Twilight Swinger">
+                <div class="card-body">
+                    <h5 class="card-title">Twilight Swinger</h5>
+                    <p>The Twilight Swinger is a classic swing ride that elevates riders into the evening sky as they soar in circles. With beautifully lit canopies and a breathtaking view of the park, this nostalgic ride offers a peaceful yet thrilling experience, perfect for guests of all ages who want to feel the wind in their hair as they spin high above the ground.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/theme-park-img/12-pat-whelen-vwlf6oQbfqk-unsplash.jpg" alt="Sky Screamer">
+                <div class="card-body">
+                    <h5 class="card-title">Sky Screamer</h5>
+                    <p>The Sky Screamer is an extreme thrill ride that swings riders high into the air while rotating at rapid speeds. With feet dangling and adrenaline pumping, this ride offers a pulse-pounding experience as you soar above the park, flipping upside down and feeling the rush of wind from every direction. Perfect for those who crave intense excitement and breathtaking views of the city skyline!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Rides Section -->
+
+    <!-- Start Contact Section -->
+    <section id="contact-section" class="grid-one main-bg3 section"> 
+        <div class="main-content grid-one-content">
+            <h2 class="grid-main-heading">Contact Us</h2>
+            <div class="grid">
+                <div class="contact-message">
+                    <p>If you have any questions or suggestions, please fill out our contact form, and we will get back to you as soon as possible.</p>
+                    <a href="contact.html" class="button">Go to Contact Form</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Start About Us Section -->
+    <section id="about" class="white-bg2 section">
+        <div class="main-content top3-content">
+            <h2>About Us</h2>
+            <p>Welcome to Adventure Land! Since opening, we've been dedicated to providing exciting experiences for families. With a wide range of rides and themed areas, there's fun for everyone!</p>
+
+            <p><strong>Operating Hours:</strong></p>
+            <p>We are open <b>every day from April to October, 9 AM to 7 PM.</b> Be sure to check our hours before visiting for the best experience.</p>
+
+            <p>If you have any questions, visit our <b><a href="faq.html">FAQ</a></b> page for more information.</p>
+            <button onclick="location.href='faq.html';">FAQ</button>
+        </div>
+    </section>
+    <!-- End About Us Section -->
+
+    <footer id="footer" class="footer white-bg">
+        &copy; <span id="year"></span> 2024 All Rights Reserved Adventure Land
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+
+   
+</body>
+</html>

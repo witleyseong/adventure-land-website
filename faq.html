@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Land</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close Menu">
+    <label class="close-menu-label" for="close-menu" title="Close Menu"></label>
+
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="document.getElementById('close-menu').checked = false;">
+                <a href="#home">
+                    <img src="/theme-park-img/19-logo.webp" alt="Logo" class="logo-img">
+                </a>
+            </h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home Page</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div class="menu-spacing"></div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="main-content">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>1. What is Adventure Land?</h3>
+                <p>Adventure Land is a theme park offering a wide variety of attractions for all ages, providing moments of fun and adventure in a safe and welcoming environment.</p>
+            </div>
+            <div class="faq-item">
+                <h3>2. How can I contact support?</h3>
+                <p>You can reach support by filling this <b><a href="contact.html">Form</a></b>. Our team is available to help with any questions or issues you may have.</p>
+            </div>
+            <div class="faq-item">
+                <h3>3. What are the opening hours?</h3>
+                <p>The park is open every day from April to October, 9 AM to 7 PM. We look forward to seeing you for a day full of fun!</p>
+            </div>
+            <div class="faq-item">
+                <h3>4. How can I sign up for an event?</h3>
+                <p>You can sign up for events through our events page, where you'll find all the necessary information and a registration form.</p>
+            </div>
+            <div class="faq-item">
+                <h3>5. Are there any registration fees?</h3>
+                <p>Some events at Adventure Land may have registration fees. All details about costs will be provided on the specific event page.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript to handle the menu -->
+    <script>
+        const closeMenuCheckbox = document.getElementById('close-menu');
+        closeMenuCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                // Menu opened
+            } else {
+                // Menu closed
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/js/main.js"></script> 
+</head>
+<body>
+    <h1 onclick="document.getElementById('close-menu').checked = false;">
+        <a href="#home">
+            <img src="/theme-park-img/19-logo.webp" alt="Logo" class="logo-img">
+        </a>
+    </h1>
+
+    <section id="contact-form" class="white-bg section">
+        <div class="main-content form-content">
+            <h2>Contact Form</h2> 
+            <form action="/contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Select a Category --</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Support">Support</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+
+                <div class="back-to-home">
+                    <a href="index.html">Back to Home Page</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer white-bg">
+        <p>&copy; <span id="year"></span> 2024 All Rights Reserved Adventure Land</p>
+    </footer>
+
+    <a class="back-to-top" href="#">➤</a>
+
+   
+</body>
+</html>
