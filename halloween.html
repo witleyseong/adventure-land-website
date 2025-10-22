@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Night | Adventure Land</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body class="halloween-page">
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>🎃 Halloween Night at Adventure Land 🎢</h1>
+        <p>Join us for a spooky night full of thrills, music, and surprises!</p>
+    </header>
+
+    <section class="event-section">
+        <h2>Event Details</h2>
+        <p><strong>Date:</strong> October 31st</p>
+        <p><strong>Time:</strong> 6:00 PM – Midnight</p>
+        <p><strong>Location:</strong> Adventure Land Main Park</p>
+        <p>
+            Enjoy haunted rides, themed food, costume contests, live DJ, and fireworks at midnight!
+            Dress up and experience Adventure Land like never before.
+        </p>
+        <button class="cta-btn" onclick="document.getElementById('signup').scrollIntoView({behavior: 'smooth'})">
+            🎟️ Reserve Your Spot
+        </button>
+    </section>
+
+    <section id="signup" class="event-section">
+        <h2>Sign Up for the Event</h2>
+        <form action="/contact" method="POST">
+            <input type="hidden" name="category" value="Feedback">
+            <input type="hidden" name="Halloween" value="Yes">
+
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject" value="Halloween Night Registration" required><br><br>
+
+            <label for="message">Message (optional):</label><br>
+            <textarea id="message" name="message" rows="4"
+                placeholder="Add any notes or costume ideas!"></textarea><br><br>
+
+            <button type="submit" class="cta-btn">Send Registration</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> 2024 Adventure Land | Halloween Special</p>
+        <a href="index.html" style="color:#ffb347;">⬅ Back to Home</a>
+    </footer>
+
+
+</body>
+
+</html>

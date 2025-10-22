@@ -1,8 +1,8 @@
-:root{
+:root {
   --primary-color: #191433;
   --white-color: #FFFFFF;
   --light-gray-color: #EEEEEE;
-  --secondary-color: rgb(67, 220, 20); 
+  --secondary-color: rgb(67, 220, 20);
   --gap: 3rem;
 }
 
@@ -24,7 +24,12 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
 }
@@ -68,11 +73,14 @@ p {
   transition: color 0.3s ease;
   color: #333;
 }
+
 .color-change {
   color: #1bb942;
 }
 
-.main-bg, .main-bg2, .main-bg3 {
+.main-bg,
+.main-bg2,
+.main-bg3 {
   background-size: cover;
   background-position: center center;
   color: var(--white-color);
@@ -84,7 +92,7 @@ p {
 
 .main-bg3 {
   background-image: url('../theme-park-img/7-pedro-velasco-XA6dMH5PTPE-unsplash.jpg');
-} 
+}
 
 .white-bg {
   background: var(--white-color);
@@ -166,8 +174,8 @@ body .full-width {
 }
 
 .logo-img {
-  height: 80px; 
-  vertical-align: middle; 
+  height: 80px;
+  vertical-align: middle;
 }
 
 .intro-content {
@@ -179,7 +187,8 @@ body .full-width {
   min-height: 100vh;
 }
 
-.intro-text-content, .intro-img {
+.intro-text-content,
+.intro-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -269,14 +278,16 @@ table caption {
   margin-bottom: 1rem;
 }
 
-table td, table th {
+table td,
+table th {
   white-space: nowrap;
   padding: 1rem;
   text-align: left;
   border: 0.1rem solid var(--light-gray-color);
 }
 
-tfoot td, table th {
+tfoot td,
+table th {
   background: var(--light-gray-color);
 }
 
@@ -294,17 +305,17 @@ tfoot td, table th {
 }
 
 .card {
-  width: 250px; 
+  width: 250px;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   width: 100%;
-  height: 250px; 
-  object-fit: cover; 
+  height: 250px;
+  object-fit: cover;
 }
 
 .card-body {
@@ -328,7 +339,7 @@ tfoot td, table th {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #fff; 
+  color: #fff;
   background-color: #f1c40f;
   text-align: center;
   text-decoration: none;
@@ -401,7 +412,7 @@ tfoot td, table th {
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -440,7 +451,9 @@ label {
   font-size: 1.6rem;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1.5rem;
@@ -453,7 +466,9 @@ textarea {
   resize: vertical;
 }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   outline: none;
   border-color: #0073e6;
 }
@@ -492,58 +507,152 @@ button:hover {
 
 /* Responsive adjustments */
 @media (max-width: 800px) {
-  .intro-content, .grid {
-      grid-template-columns: 1fr;
+
+  .intro-content,
+  .grid {
+    grid-template-columns: 1fr;
   }
 
   .my_formation-content {
-      display: block;
+    display: block;
   }
 
   .menu {
-      bottom: 0;
-      text-align: center;
+    bottom: 0;
+    text-align: center;
   }
-  
-  .menu-content, .menu-content ul {
-      flex-direction: column;
-      justify-content: center;
+
+  .menu-content,
+  .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
   }
-  
+
   .menu-content {
-      height: 100vh;
+    height: 100vh;
   }
 
   .menu {
-      display: none;
+    display: none;
   }
 
   .close-menu-label::after {
-      content: '☰';
-      position: fixed;
-      z-index: 2;
-      top: 2rem;
-      right: 2rem;
-      background: var(--primary-color);
-      color: var(--white-color);
-      font-size: 3rem;
-      line-height: 3rem;
-      width: 3rem;
-      height: 3rem;
-      text-align: center;
-      padding: 0.5rem;
-      cursor: pointer;
+    content: '☰';
+    position: fixed;
+    z-index: 2;
+    top: 2rem;
+    right: 2rem;
+    background: var(--primary-color);
+    color: var(--white-color);
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
   }
 
   .close-menu:checked~.menu {
-      display: block;
+    display: block;
   }
 
   .close-menu:checked~.close-menu-label::after {
-      content: '×';
+    content: '×';
   }
-  
+
   .menu-spacing {
-      display: none;
+    display: none;
   }
+}
+
+
+
+/*  HALLOWEEN PAGE THEME  */
+body.halloween-page {
+    background-color: #0d0d0d;
+    color: #f0e68c;
+    background-image: url('../theme-park-img/halloween-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.halloween-page h1,
+body.halloween-page h2 {
+    color: #ff7518;
+    text-shadow: 2px 2px 8px black;
+}
+
+body.halloween-page .event-section {
+    background: rgba(0, 0, 0, 0.7);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px orange;
+}
+
+body.halloween-page .cta-btn {
+    background-color: #ff7518;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+body.halloween-page .cta-btn:hover {
+    background-color: #ffb347;
+}
+
+body.halloween-page footer {
+    margin-top: 3rem;
+    color: #ffb347;
+}
+
+
+/* 🎃 Halloween preview section (on home page) */
+#halloween {
+    background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+    background-color:  black;
+    color: #ffb347;
+    text-align: center;
+    background-image: url('../theme-park-img/halloween-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#halloween h2 {
+    color: #ff7518;
+    text-shadow: 2px 2px 8px black;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+#halloween p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    line-height: 1.6;
+}
+
+.halloween-btn {
+    display: inline-block;
+    background-color: #ff7518;
+    color: #000;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.halloween-btn:hover {
+    background-color: #ffb347;
+    color: #222;
 }
