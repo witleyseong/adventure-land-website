@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("✅ script.js carregado com sucesso!");
+
 
   const adminLink = document.getElementById("admin-link");
   if (!adminLink) {
-    console.error("❌ admin-link não encontrado no HTML!");
+    console.error(" admin-link not finded");
     return;
   }
 
-  // cria o modal direto no HTML
+  
   const modalHTML = `
     <div id="login-modal" class="modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
       <div class="modal-content" style="background:white; padding:20px; border-radius:10px; text-align:center; width:300px;">
@@ -23,31 +23,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.body.insertAdjacentHTML("beforeend", modalHTML);
 
-  // pega os elementos criados
+ 
   const modal = document.getElementById("login-modal");
   const closeModal = document.getElementById("close-modal");
   const loginBtn = document.getElementById("login-btn");
   const message = document.getElementById("login-message");
 
-  // abrir modal
+  
   adminLink.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("🟢 Clicou em Admin!");
     modal.style.display = "flex";
   });
 
-  // fechar modal
+  
   closeModal.addEventListener("click", () => {
     modal.style.display = "none";
   });
 
-  // tentar login (chama backend)
+  
   loginBtn.addEventListener("click", async () => {
     const email = document.getElementById("admin-email").value.trim();
     const password = document.getElementById("admin-password").value.trim();
 
     if (!email || !password) {
-      message.textContent = "Preencha email e senha.";
+      message.textContent = "fill email and password.";
       return;
     }
 
@@ -68,11 +67,11 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     } catch (err) {
       console.error("Erro de conexão:", err);
-      message.textContent = "Erro ao conectar com o servidor.";
+      message.textContent = "Error to connect with server.";
     }
   });
 
-  // fechar clicando fora
+  
   window.onclick = function (event) {
     if (event.target === modal) {
       modal.style.display = "none";

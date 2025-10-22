@@ -50,7 +50,7 @@ app.post('/contact', (req, res) => {
     stmt.run(name, email, category, subject, message, Halloween || 'No');
 
     console.log('new contact saved', name, email, category)
-    res.send('<h2>Message received! ✅</h2><a href="/index.html">Go back</a>')
+    res.send('<h2>Message received! </h2><a href="/index.html">Go back</a>')
 
 })
 

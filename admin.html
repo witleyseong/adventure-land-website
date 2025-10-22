@@ -7,12 +7,12 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <h1>📊 Admin Dashboard</h1>
+  <h1> Admin Dashboard</h1>
 
   <button id="logout">Logout</button>
 
   <section id="data-section">
-    <h2>All Contact Submissions</h2>
+    <h4>All Contact Submissions</h4>
     <table id="data-table" border="1" cellpadding="8" style="width:90%; margin:auto; text-align:left;">
       <thead>
         <tr>
@@ -26,24 +26,24 @@
         </tr>
       </thead>
       <tbody>
-        <!-- os dados serão inseridos aqui via JS -->
+        <!-- the data will be here via JS -->
       </tbody>
     </table>
   </section>
 
   <script>
-    // bloqueia acesso se não estiver logado
+    // block access if not logged
     if (localStorage.getItem("isAdminLogged") !== "true") {
       window.location.href = "index.html";
     }
 
-    // botão logout
+    // buttonlogout
     document.getElementById("logout").addEventListener("click", () => {
       localStorage.removeItem("isAdminLogged");
       window.location.href = "index.html";
     });
 
-    // busca dados do backend
+    //  backend
     async function loadData() {
       try {
         const response = await fetch('/admin/data');
